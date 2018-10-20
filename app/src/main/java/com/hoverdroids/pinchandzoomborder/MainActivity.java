@@ -18,6 +18,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         applyHoverDroidsBranding();
+		
+		//Before anything can be used in the imageView, a background image bust be set
+        PinchZoomImageView imageView = findViewById(R.id.imageview);
+        imageView.initImageResource(R.drawable.hoverdroids);
     }
 
     //None of this is essential for the example. It is only used to brand HoverDroids examples
